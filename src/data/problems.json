@@ -1,0 +1,327 @@
+[
+    {
+        "id": 27,
+        "test_count": 0,
+        "solved": 0,
+        "pid": "B",
+        "title": "Last minute enhancements",
+        "description": "Athenaeus has just finished creating his latest musical composition and will present it tomorrow to the people of Athens. Unfortunately, the melody is rather dull and highly likely won't be met with a warm reception. His song consists of $$$n$$$ notes, which we will treat as positive integers. The diversity of a song is the number of different notes it contains. As a patron of music, Euterpe watches over composers and guides them throughout the process of creating new melodies. She decided to help Athenaeus by changing his song to make it more diverse. Being a minor goddess, she cannot arbitrarily change the song. Instead, for each of the $$$n$$$ notes in the song, she can either leave it as it is or increase it by $$$1$$$. Given the song as a sequence of integers describing the notes, find out the maximal, achievable diversity.",
+        "difficulty": 71,
+        "input_description": "The input consists of multiple test cases. The first line contains an integer $$$t$$$ ($$$1 \\leq t \\leq 10\\,000$$$) — the number of test cases. Then $$$t$$$ test cases follow, each one is described in two lines.In the first line of each test case there is a single integer $$$n$$$ ($$$1 \\leq n \\leq 10^5$$$) denoting the length of the song. The next line contains a sequence of $$$n$$$ integers $$$x_1, x_2, \\ldots, x_n$$$ $$$(1 \\leq x_1 \\leq x_2 \\leq \\ldots \\leq x_n \\leq 2 \\cdot n)$$$, describing the song. The sum of $$$n$$$ over all test cases does not exceed $$$10^5$$$.",
+        "output_description": "For each test case, you should output a single line containing precisely one integer, the maximal diversity of the song, i.e. the maximal possible number of different elements in the final sequence.",
+        "time_limit": 1000,
+        "memory_limit": 256,
+        "create_time": "2021-02-01",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "5\n6\n1 2 2 2 5 6\n2\n4 4\n6\n1 1 3 4 4 5\n1\n1\n6\n1 1 1 2 2 2",
+                "output": "5\n2\n6\n1\n3"
+            }
+        ],
+        "clarification": "NoteIn the first test case, Euterpe can increase the second, fifth and sixth element to obtain the sequence $$$1, \\underline{3}, 2, 2, \\underline{6}, \\underline{7}$$$, which has $$$5$$$ different elements (increased elements are underlined).In the second test case, Euterpe can increase the first element to obtain the sequence $$$\\underline{5}, 4$$$, which has $$$2$$$ different elements.In the third test case, Euterpe can increase the second, fifth and sixth element to obtain the sequence $$$1, \\underline{2}, 3, 4, \\underline{5}, \\underline{6}$$$, which has $$$6$$$ different elements.",
+        "author": 1,
+        "contest": 1
+    },
+    {
+        "id": 17,
+        "test_count": 1,
+        "solved": 0,
+        "pid": "D",
+        "title": "Watermelon",
+        "description": "One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed `w` kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem. Pete and Billy are great fans of even numbers, that's why they want to divide the watermelon in such a way that each of the two parts weighs **even** number of kilos, at the same time it is **not obligatory** that the parts are equal. The boys are extremely tired and want to start their meal as soon as possible, that's why you should help them and find out, if they can divide the watermelon in the way they want. For sure, each of them should get a part of positive weight.",
+        "difficulty": 66,
+        "input_description": "The first (and the only) input line contains integer number $w (1 ≤ w ≤ 100)$ — the weight of the watermelon bought by the boys.",
+        "output_description": "Print `YES`, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and `NO` in the opposite case.",
+        "time_limit": 1000,
+        "memory_limit": 64,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "8",
+                "output": "YES"
+            }
+        ],
+        "clarification": "NoteFor example, the boys can divide the watermelon into two parts of 2 and 6 kilos respectively (another variant — two parts of 4 and 4 kilos).",
+        "author": 1,
+        "contest": 2
+    },
+    {
+        "id": 18,
+        "test_count": 2,
+        "solved": 0,
+        "pid": "E",
+        "title": "A and B and Interesting Substrings",
+        "description": "A and B are preparing themselves for programming contests.After several years of doing sports programming and solving many problems that require calculating all sorts of abstract objects, A and B also developed rather peculiar tastes.A likes lowercase letters of the Latin alphabet. He has assigned to each letter a number that shows how much he likes that letter (he has assigned negative numbers to the letters he dislikes). B likes substrings. He especially likes the ones that start and end with the same letter (their length must exceed one). Also, A and B have a string s. Now they are trying to find out how many substrings t of a string s are interesting to B (that is, t starts and ends with the same letter and its length is larger than one), and also the sum of values of all letters (assigned by A), except for the first and the last one is equal to zero.Naturally, A and B have quickly found the number of substrings t that are interesting to them. Can you do it?",
+        "difficulty": 14,
+        "input_description": "The first line contains `26` integers $xa, xb, ..., xz ( - 105 ≤ xi ≤ 105)$ — the value assigned to letters $a, b, c, ..., z$ respectively.The second line contains string s of length between `1` and `105` characters, consisting of Latin lowercase letters — the string for which you need to calculate the answer.",
+        "output_description": "Print the answer to the problem.",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "1 1 -1 1 1 1 1 1 1 1 1 1 1 1 1 7 1 1 1 8 1 1 1 1 1 1xabcab",
+                "output": "2"
+            }
+        ],
+        "clarification": "NoteIn the first sample test strings satisfying the condition above are abca and bcab.In the second sample test strings satisfying the condition above are two occurences of aa.",
+        "author": 1,
+        "contest": 2
+    },
+    {
+        "id": 16,
+        "test_count": 3,
+        "solved": 0,
+        "pid": "C",
+        "title": "Orchestra",
+        "description": "Paul is at the orchestra. The string section is arranged in an `r × c` rectangular grid and is filled with violinists with the exception of `n` violists. Paul really likes violas, so he would like to take a picture including at least `k` of them. Paul can take a picture of any axis-parallel rectangle in the orchestra. Count the number of possible pictures that Paul can take. Two pictures are considered to be different if the coordinates of corresponding rectangles are different.",
+        "difficulty": 91,
+        "input_description": "The first line of input contains four space-separated integers $r, c, n, k (1 ≤ r, c, n ≤ 10, 1 ≤ k ≤ n)$ — the number of rows and columns of the string section, the total number of violas, and the minimum number of violas Paul would like in his photograph, respectively.The next `n` lines each contain two integers $x_i$ and $y_i (1 ≤ x_i ≤ r, 1 ≤ y_i ≤ c)$: the position of the `i-th` viola. It is guaranteed that no location appears more than once in the input.",
+        "output_description": "Print a single integer — the number of photographs Paul can take which include at least `k` violas.",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "2 2 1 11 2",
+                "output": "4"
+            }
+        ],
+        "clarification": "NoteWe will use '*' to denote violinists and '#' to denote violists.In the first sample, the orchestra looks as follows *#** Paul can take a photograph of just the viola, the 1 × 2 column containing the viola, the 2 × 1 row containing the viola, or the entire string section, for 4 pictures total.In the second sample, the orchestra looks as follows #**##* Paul must take a photograph of the entire section.In the third sample, the orchestra looks the same as in the second sample.",
+        "author": 1,
+        "contest": 2
+    },
+    {
+        "id": 22,
+        "test_count": 1,
+        "solved": 0,
+        "pid": "D",
+        "title": "Pairs",
+        "description": "You have $$$2n$$$ integers $$$1, 2, \\dots, 2n$$$. You have to redistribute these $$$2n$$$ elements into $$$n$$$ pairs. After that, you choose $$$x$$$ pairs and take minimum elements from them, and from the other $$$n - x$$$ pairs, you take maximum elements.Your goal is to obtain the set of numbers $$$\\{b_1, b_2, \\dots, b_n\\}$$$ as the result of taking elements from the pairs.What is the number of different $$$x$$$-s ($$$0 \\le x \\le n$$$) such that it's possible to obtain the set $$$b$$$ if for each $$$x$$$ you can choose how to distribute numbers into pairs and from which $$$x$$$ pairs choose minimum elements?",
+        "difficulty": 52,
+        "input_description": "InputThe first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) — the number of test cases.The first line of each test case contains the integer $$$n$$$ ($$$1 \\le n \\le 2 \\cdot 10^5$$$).The second line of each test case contains $$$n$$$ integers $$$b_1, b_2, \\dots, b_n$$$ ($$$1 \\le b_1 < b_2 < \\dots < b_n \\le 2n$$$) — the set you'd like to get.It's guaranteed that the sum of $$$n$$$ over test cases doesn't exceed $$$2 \\cdot 10^5$$$.",
+        "output_description": "OutputFor each test case, print one number — the number of different $$$x$$$-s such that it's possible to obtain the set $$$b$$$.",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "3\n1\n1\n5\n1 4 5 9 10\n2\n3 4",
+                "output": "1\n3"
+            }
+        ],
+        "clarification": "NoteIn the first test case, $$$x = 1$$$ is the only option: you have one pair $$$(1, 2)$$$ and choose the minimum from this pair.In the second test case, there are three possible $$$x$$$-s. If $$$x = 1$$$, then you can form the following pairs: $$$(1, 6)$$$, $$$(2, 4)$$$, $$$(3, 5)$$$, $$$(7, 9)$$$, $$$(8, 10)$$$. You can take minimum from $$$(1, 6)$$$ (equal to $$$1$$$) and the maximum elements from all other pairs to get set $$$b$$$.If $$$x = 2$$$, you can form pairs $$$(1, 2)$$$, $$$(3, 4)$$$, $$$(5, 6)$$$, $$$(7, 9)$$$, $$$(8, 10)$$$ and take the minimum elements from $$$(1, 2)$$$, $$$(5, 6)$$$ and the maximum elements from the other pairs.If $$$x = 3$$$, you can form pairs $$$(1, 3)$$$, $$$(4, 6)$$$, $$$(5, 7)$$$, $$$(2, 9)$$$, $$$(8, 10)$$$ and take the minimum elements from $$$(1, 3)$$$, $$$(4, 6)$$$, $$$(5, 7)$$$.In the third test case, $$$x = 0$$$ is the only option: you can form pairs $$$(1, 3)$$$, $$$(2, 4)$$$ and take the maximum elements from both of them.",
+        "author": 1,
+        "contest": 8
+    },
+    {
+        "id": 24,
+        "test_count": 1,
+        "solved": 0,
+        "pid": "F",
+        "title": "Max Correct Set",
+        "description": "Let's call the set of positive integers $$$S$$$ correct if the following two conditions are met:   $$$S \\subseteq \\{1, 2, \\dots, n\\}$$$;  if $$$a \\in S$$$ and $$$b \\in S$$$, then $$$|a-b| \\neq x$$$ and $$$|a-b| \\neq y$$$. For the given values $$$n$$$, $$$x$$$, and $$$y$$$, you have to find the maximum size of the correct set.",
+        "difficulty": 17,
+        "input_description": "InputA single line contains three integers $$$n$$$, $$$x$$$ and $$$y$$$ ($$$1 \\le n \\le 10^9$$$; $$$1 \\le x, y \\le 22$$$). ",
+        "output_description": "OutputPrint one integer — the maximum size of the correct set.",
+        "time_limit": 4000,
+        "memory_limit": 256,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "'10 2 5'",
+                "output": "'5'"
+            }
+        ],
+        "clarification": null,
+        "author": 1,
+        "contest": 8
+    },
+    {
+        "id": 23,
+        "test_count": 2,
+        "solved": 0,
+        "pid": "E",
+        "title": "Plan of Lectures",
+        "description": "Ivan is a programming teacher. During the academic year, he plans to give $$$n$$$ lectures on $$$n$$$ different topics. Each topic should be used in exactly one lecture. Ivan wants to choose which topic will he explain during the $$$1$$$-st, $$$2$$$-nd, ..., $$$n$$$-th lecture — formally, he wants to choose some permutation of integers from $$$1$$$ to $$$n$$$ (let's call this permutation $$$q$$$). $$$q_i$$$ is the index of the topic Ivan will explain during the $$$i$$$-th lecture.For each topic (except exactly one), there exists a prerequisite topic (for the topic $$$i$$$, the prerequisite topic is $$$p_i$$$). Ivan cannot give a lecture on a topic before giving a lecture on its prerequisite topic. There exists at least one valid ordering of topics according to these prerequisite constraints.Ordering the topics correctly can help students understand the lectures better. Ivan has $$$k$$$ special pairs of topics $$$(x_i, y_i)$$$ such that he knows that the students will understand the $$$y_i$$$-th topic better if the lecture on it is conducted right after the lecture on the $$$x_i$$$-th topic. Ivan wants to satisfy the constraints on every such pair, that is, for every $$$i \\in [1, k]$$$, there should exist some $$$j \\in [1, n - 1]$$$ such that $$$q_j = x_i$$$ and $$$q_{j + 1} = y_i$$$.Now Ivan wants to know if there exists an ordering of topics that satisfies all these constraints, and if at least one exists, find any of them. ",
+        "difficulty": 68,
+        "input_description": "InputThe first line contains two integers $$$n$$$ and $$$k$$$ ($$$2 \\le n \\le 3 \\cdot 10^5$$$, $$$1 \\le k \\le n - 1$$$) — the number of topics and the number of special pairs of topics, respectively.The second line contains $$$n$$$ integers $$$p_1$$$, $$$p_2$$$, ..., $$$p_n$$$ ($$$0 \\le p_i \\le n$$$), where $$$p_i$$$ is the prerequisite topic for the topic $$$i$$$ (or $$$p_i = 0$$$ if the $$$i$$$-th topic has no prerequisite topics). Exactly one of these integers is $$$0$$$. At least one ordering of topics such that for every $$$i$$$ the $$$p_i$$$-th topic is placed before the $$$i$$$-th topic exists.Then $$$k$$$ lines follow, the $$$i$$$-th line contains two integers $$$x_i$$$ and $$$y_i$$$ ($$$1 \\le x_i, y_i \\le n$$$; $$$x_i \\ne y_i$$$) — the topics from the $$$i$$$-th special pair. All values of $$$x_i$$$ are pairwise distinct; similarly, all valus of $$$y_i$$$ are pairwise distinct.",
+        "output_description": "OutputIf there is no ordering of topics meeting all the constraints, print $$$0$$$.Otherwise, print $$$n$$$ pairwise distinct integers $$$q_1$$$, $$$q_2$$$, ..., $$$q_n$$$ ($$$1 \\le q_i \\le n$$$) — the ordering of topics meeting all of the constraints. If there are multiple answers, print any of them.",
+        "time_limit": 2000,
+        "memory_limit": 512,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "'5 2\\n2 3 0 5 3\\n1 5\\n5 4'",
+                "output": "'3 2 1 5 4'"
+            }
+        ],
+        "clarification": null,
+        "author": 1,
+        "contest": 8
+    },
+    {
+        "id": 20,
+        "test_count": 1,
+        "solved": 0,
+        "pid": "B",
+        "title": "Find The Array",
+        "description": "You are given an array $$$[a_1, a_2, \\dots, a_n]$$$ such that $$$1 \\le a_i \\le 10^9$$$. Let $$$S$$$ be the sum of all elements of the array $$$a$$$. Let's call an array $$$b$$$ of $$$n$$$ integers beautiful if:  $$$1 \\le b_i \\le 10^9$$$ for each $$$i$$$ from $$$1$$$ to $$$n$$$;  for every pair of adjacent integers from the array $$$(b_i, b_{i + 1})$$$, either $$$b_i$$$ divides $$$b_{i + 1}$$$, or $$$b_{i + 1}$$$ divides $$$b_i$$$ (or both);  $$$2 \\sum \\limits_{i = 1}^{n} |a_i - b_i| \\le S$$$. Your task is to find any beautiful array. It can be shown that at least one beautiful array always exists.",
+        "difficulty": 76,
+        "input_description": "The first line contains one integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) — the number of test cases. Each test case consists of two lines. The first line contains one integer $$$n$$$ ($$$2 \\le n \\le 50$$$).The second line contains $$$n$$$ integers $$$a_1, a_2, \\dots, a_n$$$ ($$$1 \\le a_i \\le 10^9$$$).",
+        "output_description": "For each test case, print the beautiful array $$$b_1, b_2, \\dots, b_n$$$ ($$$1 \\le b_i \\le 10^9$$$) on a separate line. It can be shown that at least one beautiful array exists under these circumstances. If there are multiple answers, print any of them.",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "4\n5\n1 2 3 4 5\n2\n4 6\n2\n1 1000000000\n6\n3 4 8 1 2 3",
+                "output": "3 3 3 3 3\n3 6\n1 1000000000\n4 4 8 1 3 3"
+            }
+        ],
+        "clarification": null,
+        "author": 1,
+        "contest": 8
+    },
+    {
+        "id": 19,
+        "test_count": 1,
+        "solved": 0,
+        "pid": "A",
+        "title": "Dungeon",
+        "description": "You are playing a new computer game in which you have to fight monsters. In a dungeon you are trying to clear, you met three monsters; the first of them has $$$a$$$ health points, the second has $$$b$$$ health points, and the third has $$$c$$$.To kill the monsters, you can use a cannon that, when fired, deals $$$1$$$ damage to the selected monster. Every $$$7$$$-th (i. e. shots with numbers $$$7$$$, $$$14$$$, $$$21$$$ etc.) cannon shot is enhanced and deals $$$1$$$ damage to all monsters, not just one of them. If some monster's current amount of health points is $$$0$$$, it can't be targeted by a regular shot and does not receive damage from an enhanced shot.You want to pass the dungeon beautifully, i. e., kill all the monsters with the same enhanced shot (i. e. after some enhanced shot, the health points of each of the monsters should become equal to $$$0$$$ for the first time). Each shot must hit a monster, i. e. each shot deals damage to at least one monster.",
+        "difficulty": 44,
+        "input_description": "InputThe first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 10^4$$$) — the number of test cases.Each test case consists of a single line that contains three integers $$$a$$$, $$$b$$$ and $$$c$$$ ($$$1 \\le a, b, c \\le 10^8$$$) — the number of health points each monster has.",
+        "output_description": "For each test case, print `YES` if you can kill all the monsters with the same enhanced shot. Otherwise, print `NO`. You may print each letter in any case (for example, `YES, Yes, yes, yEs` will all be recognized as positive answer).",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "3\n3 2 4\n1 1 1\n10 1 7",
+                "output": "YES\nNO\nNO"
+            }
+        ],
+        "clarification": "NoteIn the first test case, you can do as follows: $$$1$$$-th shot to the first monster, $$$2$$$-th shot to the second monster, $$$3$$$-th shot to the third monster, $$$4$$$-th shot to the first monster, $$$5$$$-th shot to the third monster, $$$6$$$-th shot to the third monster, and $$$7$$$-th enhanced shot will kill all the monsters.In the second test case, you can't kill monsters with the same enhanced shot, because the total number of health points of monsters is $$$3$$$, and you will kill them in the first 3 shots.",
+        "author": 1,
+        "contest": 8
+    },
+    {
+        "id": 21,
+        "test_count": 1,
+        "solved": 0,
+        "pid": "C",
+        "title": "Busy Robot",
+        "description": "You have a robot that can move along a number line. At time moment $$$0$$$ it stands at point $0$. You give $$$n$$$ commands to the robot: at time $$$t_i$$$ seconds you command the robot to go to point $$$x_i$$$. Whenever the robot receives a command, it starts moving towards the point $$$x_i$$$ with the speed of $$$1$$$ unit per second, and he stops when he reaches that point. However, while the robot is moving, it ignores all the other commands that you give him.For example, suppose you give three commands to the robot: at time $$$1$$$ move to point $$$5$$$, at time $$$3$$$ move to point $$$0$$$ and at time $$$6$$$ move to point $$$4$$$. Then the robot stands at $$$0$$$ until time $$$1$$$, then starts moving towards $$$5$$$, ignores the second command, reaches $$$5$$$ at time $$$6$$$ and immediately starts moving to $$$4$$$ to execute the third command. At time $$$7$$$ it reaches $$$4$$$ and stops there.You call the command $$$i$$$ successful, if there is a time moment in the range $$$[t_i, t_{i + 1}]$$$ (i. e. after you give this command and before you give another one, both bounds inclusive; we consider $$$t_{n + 1} = +\\infty$$$) when the robot is at point $$$x_i$$$. Count the number of successful commands. Note that it is possible that an ignored command is successful.",
+        "difficulty": 15,
+        "input_description": "IThe first line contains a single integer $$$t$$$ ($$$1 \\le t \\le 1000$$$) — the number of test cases. The next lines describe the test cases.The first line of a test case contains a single integer $$$n$$$ ($$$1 \\le n \\le 10^5$$$) — the number of commands.The next $$$n$$$ lines describe the commands. The $$$i$$$-th of these lines contains two integers $$$t_i$$$ and $$$x_i$$$ ($$$1 \\le t_i \\le 10^9$$$, $$$-10^9 \\le x_i \\le 10^9$$$) — the time and the point of the $$$i$$$-th command.The commands are ordered by time, that is, $$$t_i < t_{i + 1}$$$ for all possible $$$i$$$.The sum of $$$n$$$ over test cases does not exceed $$$10^5$$$.",
+        "output_description": "For each testcase output a single integer — the number of successful commands.",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2021-01-26",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "8\n3\n1 5\n3 0\n6 4\n3\n1 5\n2 4\n10 -5\n5\n2 -5\n3 1\n4 1\n5 1\n6 1\n4\n3 3\n5 -3\n9 2\n12 0\n8\n1 1\n2 -6\n7 2\n8 3\n12 -9\n14 2\n18 -1\n23 9\n5\n1 -4\n4 -7\n6 -1\n7 -3\n8 -7\n2\n1 2\n2 -2\n6\n3 10\n5 5\n8 0\n12 -4\n14 -7\n19 -5",
+                "output": "1\n2\n0\n2\n1\n1\n0\n2"
+            }
+        ],
+        "clarification": "NoteThe movements of the robot in the first test case are described in the problem statement. Only the last command is successful.In the second test case the second command is successful: the robot passes through target point $$$4$$$ at time $$$5$$$. Also, the last command is eventually successful.In the third test case no command is successful, and the robot stops at $$$-5$$$ at time moment $$$7$$$.Here are the $$$0$$$-indexed sequences of the positions of the robot in each second for each testcase of the example. After the cut all the positions are equal to the last one:   $$$[0, 0, 1, 2, 3, 4, 5, 4, 4, \\dots]$$$  $$$[0, 0, 1, 2, 3, 4, 5, 5, 5, 5, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -5, \\dots]$$$  $$$[0, 0, 0, -1, -2, -3, -4, -5, -5, \\dots]$$$  $$$[0, 0, 0, 0, 1, 2, 3, 3, 3, 3, 2, 2, 2, 1, 0, 0, \\dots]$$$  $$$[0, 0, 1, 0, -1, -2, -3, -4, -5, -6, -6, -6, -6, -7, -8, -9, -9, -9, -9, -8, -7, -6, -5, -4, -3, -2, -1, -1, \\dots]$$$  $$$[0, 0, -1, -2, -3, -4, -4, -3, -2, -1, -1, \\dots]$$$  $$$[0, 0, 1, 2, 2, \\dots]$$$  $$$[0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -6, -7, -7, \\dots]$$$ ",
+        "author": 1,
+        "contest": 8
+    },
+    {
+        "id": 3,
+        "test_count": 0,
+        "solved": 0,
+        "pid": "B",
+        "title": "Elimination",
+        "description": "There is a famous olympiad, which has more than a hundred participants. The Olympiad consists of two stages: the elimination stage, and the final stage. At least a hundred participants will advance to the final stage. The elimination stage in turn consists of two contests.\n\nA result of the elimination stage is the total score in two contests, but, unfortunately, the jury lost the final standings and has only standings for the first and for the second contest separately.\n\nIn each contest, the participants are ranked by their point score in non-increasing order. When two participants have a tie (earned the same score), they are ranked by their passport number (in accordance with local regulations, all passport numbers are distinct).\n\nIn the first contest, the participant on the 100-th place scored 𝑎 points. Also, the jury checked all participants from the 1-st to the 100-th place (inclusive) in the first contest and found out that all of them have at least `b` points in the second contest.\n\nSimilarly, for the second contest, the participant on the 100-th place has `c` points. And the jury checked that all the participants from the 1-st to the 100-th place (inclusive) have at least `d` points in the first contest.\n\nAfter two contests, all participants are ranked by their total score in two contests in non-increasing order. When participants have the same total score, tie-breaking with passport numbers is used. The cutoff score to qualify to the final stage is the total score of the participant on the 100-th place.\n\nGiven integers `a, b, c, d`, please help the jury determine the smallest possible value of the cutoff score.",
+        "difficulty": null,
+        "input_description": "You need to process `t` test cases.\n\nThe first line contains an integer $t (1≤t≤3025)$ — the number of test cases. Then descriptions of 𝑡 test cases follow.\n\nThe first line of each test case contains four integers $a, b, c, d (0≤a, b, c, d≤9; d≤a; b≤c)$.\n\nOne can show that for any test case satisfying the constraints above, there is at least one olympiad scenario possible.",
+        "output_description": "For each test case print a single integer — the smallest possible cutoff score in some olympiad scenario satisfying the given information",
+        "time_limit": 1000,
+        "memory_limit": 512,
+        "create_time": "2021-01-12",
+        "source": null,
+        "score": 0,
+        "samples": [
+            {
+                "input": "2\n1 2 2 1\n4 8 9 2",
+                "output": "3\n12"
+            }
+        ],
+        "clarification": null,
+        "author": 1,
+        "contest": 2
+    },
+    {
+        "id": 2,
+        "test_count": 0,
+        "solved": 0,
+        "pid": "A",
+        "title": "Interesting Subarray",
+        "description": "For an array `a` of integers let's denote its maximal element as `max(a)`, and minimal as `min(a)`. We will call an array `a` of `k` integers interesting if `max(a)−min(a) ≥ k`. For example, array `[1,3,4,3]` isn't interesting as `max(a)−min(a) = 4−1 = 3 < 4` while array `[7,3,0,4,3]` is as `max(a)−min(a)=7−0 = 7 ≥ 5`.\n\nYou are given an array `a` of `n` integers. Find some interesting non empty subarray of `a`, or tell that it doesn't exist.\n\nAn array `b` is a subarray of an array `a` if `b` can be obtained from `a` by deletion of several (possibly, zero or all) elements from the beginning and several (possibly, zero or all) elements from the end. In particular, an array is a subarray of itself.",
+        "difficulty": null,
+        "input_description": "The first line contains integer number $t (1≤t≤10000)$. Then `t` test cases follow.\n\nThe first line of each test case contains a single integer $n (2≤n≤2⋅105)$ — the length of the array.\n\nThe second line of each test case contains `n` integers $a_1,a_2,…,a_𝑛 (0≤a_i≤109)$ — the elements of the array.\n\nIt is guaranteed that the sum of `n` over all test cases does not exceed $2⋅105$.",
+        "output_description": "For each test case, output `\"NO\"` in a separate line if there is no interesting nonempty subarray in `a`.\n\nOtherwise, output `\"YES\"` in a separate line. In the next line, output two integers `l` and `r` $(1≤𝑙≤𝑟≤𝑛)$ — bounds of the chosen subarray. If there are multiple answers, print any.\n\nYou can print each letter in any case (upper or lower).",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2020-12-31",
+        "source": null,
+        "score": 0,
+        "samples": [
+            {
+                "input": "3\n5\n1 2 3 4 5\n4\n2 0 1 9\n2\n2019 2020",
+                "output": "NO\nYES\n1 4\nNO"
+            }
+        ],
+        "clarification": null,
+        "author": 1,
+        "contest": 2
+    },
+    {
+        "id": 1,
+        "test_count": 5,
+        "solved": 0,
+        "pid": "A",
+        "title": "Reverse Binary Strings",
+        "description": "You are given a string 𝑠 of even length 𝑛. String 𝑠 is binary, in other words, consists only of 0's and 1's.\r\n\r\nString 𝑠 has exactly 𝑛2 zeroes and 𝑛2 ones (𝑛 is even).\r\n\r\nIn one operation you can reverse any substring of 𝑠. A substring of a string is a contiguous subsequence of that string.\r\n\r\nWhat is the minimum number of operations you need to make string 𝑠 alternating? A string is alternating if 𝑠𝑖≠𝑠𝑖+1 for all 𝑖. There are two types of alternating strings in general: 01010101... or 10101010...",
+        "difficulty": 30,
+        "input_description": "The first line contains a single integer 𝑡 (1≤𝑡≤1000) — the number of test cases.\r\n\r\nThe first line of each test case contains a single integer 𝑛 (2≤𝑛≤105; 𝑛 is even) — the length of string 𝑠.\r\n\r\nThe second line of each test case contains a binary string 𝑠 of length 𝑛 (𝑠𝑖∈ {0, 1}). String 𝑠 has exactly 𝑛2 zeroes and 𝑛2 ones.\r\n\r\nIt's guaranteed that the total sum of 𝑛 over test cases doesn't exceed 105.",
+        "output_description": "For each test case, print the minimum number of operations to make 𝑠 alternating.",
+        "time_limit": 2000,
+        "memory_limit": 256,
+        "create_time": "2020-12-22",
+        "source": "Codeforces",
+        "score": 0,
+        "samples": [
+            {
+                "input": "3\n2\n10\n4\n0110\n8\n11101000\n",
+                "output": "0\n1\n2\n"
+            }
+        ],
+        "clarification": null,
+        "author": 1,
+        "contest": 1
+    }
+]
