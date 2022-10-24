@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/online-judge-web/static/css/main.5678c68f.css",
+    "main.js": "/online-judge-web/static/js/main.1fb08d1e.js",
+    "static/js/787.c5b71d02.chunk.js": "/online-judge-web/static/js/787.c5b71d02.chunk.js",
+    "static/media/RingbearerMedium-51mgZ.ttf": "/online-judge-web/static/media/RingbearerMedium-51mgZ.81688da96bd2ba917e09.ttf",
+    "index.html": "/online-judge-web/index.html",
+    "main.5678c68f.css.map": "/online-judge-web/static/css/main.5678c68f.css.map",
+    "main.1fb08d1e.js.map": "/online-judge-web/static/js/main.1fb08d1e.js.map",
+    "787.c5b71d02.chunk.js.map": "/online-judge-web/static/js/787.c5b71d02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5678c68f.css",
+    "static/js/main.1fb08d1e.js"
+  ]
+}
