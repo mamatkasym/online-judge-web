@@ -9,7 +9,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js|jsx|ts|tsx$/,
+                test: /\.js$|jsx$|ts$|tsx$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
             },
@@ -24,6 +24,18 @@ module.exports = {
                     "sass-loader",
                 ],
             },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }
+                ]
+            }
         ]
     },
     resolve: {

@@ -8,6 +8,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import Dropdown from 'react-bootstrap/Dropdown';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import jsonProblems from "../data/problems.json"
 
 
 const Problems: FC = () => {
@@ -17,7 +18,7 @@ const Problems: FC = () => {
         difficulty: number
     }
     const tags = require("../data/tags.json");
-    const [problems, setProblems] = useState(require("../data/problems.json"));
+    const [problems, setProblems] = useState(jsonProblems);
     const [search, setSearch] = useState("");
 
     const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +27,7 @@ const Problems: FC = () => {
     }
 
     useEffect(() => {
-        const jsonProblems = require("../data/problems.json");
+        // @ts-ignore
         setProblems(jsonProblems.filter((problem: Problem) => problem.title.includes(search)));
     }, [search])
 
@@ -86,7 +87,7 @@ const Problems: FC = () => {
                         </tr>
                         </thead>
                         <tbody>
-                        { problems.map((problem: Problem) =>
+                        { problems.map((problem: any) =>
                             <tr key={problem.id}>
                                 <td>{problem.id}</td>
                                 <td>
