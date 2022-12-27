@@ -1,0 +1,73 @@
+[
+    {
+        "id": 3423,
+        "language": "Python",
+        "memory": "8372",
+        "runtime": "342",
+        "status": "AC",
+        "code": "from random import randint\ndef main():\n    s = float(input())\n    ct = 0\n    for i in range(1000):\n        while True:\n            x = randint(-10**9, 10**9)\n            y = randint(-10**9, 10**9)\n            if x**2+y**2 <= 10**18:\n                print(x, y)\n                break\n        q = input().split()\n        if q[0] == '2':\n            return\n"
+    },
+    {
+        "id": 143,
+        "language": "Scala",
+        "memory": "372",
+        "runtime": "432",
+        "status": "WA" 
+    },
+    {
+        "id": 7831,
+        "language": "Java",
+        "memory": "8372",
+        "runtime": "342",
+        "status": "TL" 
+    },
+    {
+        "id": 3783,
+        "language": "Python",
+        "memory": "6472",
+        "runtime": "542",
+        "status": "WA" 
+    },
+    {
+        "id": 23,
+        "language": "C++",
+        "memory": "653",
+        "runtime": "32",
+        "status": "AC" 
+    },
+    {
+        "id": 338423,
+        "language": "Python",
+        "memory": "8372",
+        "runtime": "342",
+        "status": "AC" 
+    },
+    {
+        "id": 342399,
+        "language": "Python",
+        "memory": "8372",
+        "runtime": "342",
+        "status": "AC" 
+    },
+    {
+        "id": 13423,
+        "language": "Python",
+        "memory": "8372",
+        "runtime": "342",
+        "status": "AC" 
+    },
+    {
+        "id": 34223,
+        "language": "Python",
+        "memory": "8372",
+        "runtime": "342",
+        "status": "AC" 
+    },
+    {
+        "id": 83628,
+        "language": "Python",
+        "memory": "8372",
+        "runtime": "342",
+        "status": "AC" 
+    }
+]
